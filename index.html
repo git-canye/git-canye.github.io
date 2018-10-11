@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ha</title>
+</head>
+<body>
+	<h2>测试</h2>
+	<script type="text/javascript">
+		let catogorys = [1,2,3,4,1,2,3,1,2,34,2,45,1],
+			arr = [],
+			minArr = [];
+		catogorys.forEach(c => {
+			if (minArr.length===8) {
+				arr.push(minArr);
+				minArr = [];
+			}
+			minArr.push(c);
+		});
+		if (minArr) {
+			arr.push(minArr)
+		}
+		console.dir(arr);
+	</script>
+</body>
+</html>
